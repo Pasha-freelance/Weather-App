@@ -12,6 +12,8 @@ ___
 ___
 ## UI was created with the help of Material-ui
 
+#### There was used an Open weather api https://openweathermap.org/
+
 > You can test app by this link https://righteous-stamp.surge.sh/ <br>
 
 Happy using!
