@@ -5,6 +5,6 @@ const apiInstance = axios.create({baseURL: 'https://api.openweathermap.org/data/
 
 export const getCurrentWeather = {
     byName(cityName) {
-        return apiInstance.get(`weather?q=${cityName}&appid=${apiKey}&lang=ru&units=metric`).then(response => response)
+        return apiInstance.get(`weather?q=${cityName}&appid=${apiKey}&lang=en&units=metric`).then(response => response)
     }
 }

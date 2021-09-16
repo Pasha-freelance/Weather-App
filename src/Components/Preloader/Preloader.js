@@ -26,7 +26,7 @@ const Preloader = () => {
     return (
         <Box className={classes.wrapper}>
             <CustomCircularProgress size={60} color={'primary'}/>
-            <Typography variant={'h5'} className={classes.text}>Подождите, мы ищем лучший прогноз</Typography>
+            <Typography variant={'h5'} className={classes.text}>Wait some time please...</Typography>
         </Box>
     );
 };

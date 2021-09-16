@@ -35,8 +35,8 @@ const StartPage = (props) => {
     const classes = useStyles()
 
     const noOptionsText = currentCity.length < 3
-        ? currentCity.length >= 1 ? "Продолжайте печатать..." : 'Начните печатать'
-        : "Похоже такого города нет :("
+        ? currentCity.length >= 1 ? "Continue typing..." : 'Type something'
+        : "It seems that we don`t know this city :("
 
     const submitHandler = (e) => {
         e.preventDefault()
