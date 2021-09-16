@@ -32,10 +32,10 @@ const ChooseCityField = (props) => {
         {...props.params}
         fullWidth={false}
         margin={'normal'}
-        label={'Выберите город'}
+        label={'Choose your city from the list'}
         required={true}
         error={props.error}
-        helperText={props.error ? 'Выберите город из списка' : ''}
+        helperText={props.error ? 'Choose your city from the list' : ''}
     />
 }
 export default ChooseCityField

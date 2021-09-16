@@ -26,7 +26,7 @@ export const MainTitle = ({cityName}) => {
                 <animated.div style={styles}>
                     <Typography variant={'h2'}
                                 align={'center'}
-                                className={classes.mainTitle}>Сейчас в городе {cityName} </Typography>
+                                className={classes.mainTitle}>Now in {cityName} </Typography>
                 </animated.div>
             }
         </Transition>

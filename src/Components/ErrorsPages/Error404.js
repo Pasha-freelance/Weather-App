@@ -55,10 +55,11 @@ const Error404 = () => {
                     {(styles) =>
                         <animated.div style={styles}>
                             <Grid item className={classes.errorText}>
-                                Похоже что-то пошло не так :( <br/>
+                               {/* Похоже что-то пошло не так :( <br/>
                                 Скорее всего у нас нет данных для вашего города<br/>
                                 Уже работаем над исправлением этого недоразумения<br/>
-                                Приносим свои извинения за неудобства
+                                Приносим свои извинения за неудобства*/}
+                                Something has gone wrong :(
                             </Grid>
                         </animated.div>
                     }
@@ -69,7 +70,7 @@ const Error404 = () => {
                 <CustomButton className={classes.tryAgainButton}
                               variant={'contained'}
                               color={'primary'}
-                              onClick={redirectToMainPage}>Попробовать еще раз</CustomButton>
+                              onClick={redirectToMainPage}>Try again</CustomButton>
             </Grid>
         </Grid>
     );

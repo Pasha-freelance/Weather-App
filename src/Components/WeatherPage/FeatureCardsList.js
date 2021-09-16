@@ -3,16 +3,16 @@ import {Grid} from "@material-ui/core";
 import FeatureCard from "./FeatureCard/FeatureCard";
 
 const getCloudiness = clouds => {
-    if (clouds === 0) return 'Безоблачно'
-    if (clouds >= 1 && clouds <= 50) return "Небольшая"
-    return "Высокая"
+    if (clouds === 0) return 'Without'
+    if (clouds >= 1 && clouds <= 50) return "Small"
+    return "Big"
 }
 
 const getWindiness = speed => {
     speed = parseInt(speed)
-    if (speed >= 0 && speed <= 5) return "Слабый"
-    if (speed >= 6 && speed <= 14) return "Умеренный"
-    if (speed >= 25) return "Сильный"
+    if (speed >= 0 && speed <= 5) return "Without"
+    if (speed >= 6 && speed <= 14) return "Moderate"
+    if (speed >= 25) return "Strong"
 }
 
 const FeatureCardsList = ({about, wind, clouds}) => {
@@ -22,14 +22,14 @@ const FeatureCardsList = ({about, wind, clouds}) => {
     return (
         <Grid container>
             <Grid container alignItems={'center'} justifyContent={'space-around'}>
-                <FeatureCard title={'Температура'} info={temperature} addSign={<span>&#176;С</span>}/>
-                <FeatureCard title={'Чувствуется'} info={feelsLike} addSign={<span>&#176;С</span>}/>
-                <FeatureCard title={"Ветер"} info={getWindiness(wind.speed)}/>
-                <FeatureCard title={"Облачность"} info={getCloudiness(clouds)}/>
+                <FeatureCard title={'Temperature'} info={temperature} addSign={<span>&#176;С</span>}/>
+                <FeatureCard title={'Feels like'} info={feelsLike} addSign={<span>&#176;С</span>}/>
+                <FeatureCard title={"Wind"} info={getWindiness(wind.speed)}/>
+                <FeatureCard title={"Clouds"} info={getCloudiness(clouds)}/>
             </Grid>
             <Grid container alignItems={'center'} justifyContent={'center'}>
-                <FeatureCard title={"Влажность"} info={humidity} addSign={<span>%</span>}/>
-                <FeatureCard title={"Давление"} info={pressure}
+                <FeatureCard title={"Humidity"} info={humidity} addSign={<span>%</span>}/>
+                <FeatureCard title={"Pressure"} info={pressure}
                              addSign={<span style={{fontSize: '15px'}}>мм.рт.ст</span>}/>
             </Grid>
         </Grid>

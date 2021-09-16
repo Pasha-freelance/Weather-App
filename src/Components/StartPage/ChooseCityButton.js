@@ -24,7 +24,7 @@ const ChooseCityButton = () => {
     return (
             <CustomButton type={'submit'}
                           variant={'contained'}
-            >Узнать погоду сейчас!</CustomButton>
+            >Show weather!</CustomButton>
     );
 };
 

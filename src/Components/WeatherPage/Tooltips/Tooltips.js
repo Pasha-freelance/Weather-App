@@ -4,7 +4,7 @@ import {Slide, Snackbar} from "@material-ui/core";
 const getMessage = (weatherDescription) => {
     const getRandIndex = arr => (parseInt(Math.random() * 10)) % arr.length
     const tips = {
-        Clear: [
+        /*Clear: [
             "Самое время прогуляться",
             "Кажется вы засиделись дома",
             "Отличный день для пикника",
@@ -22,6 +22,15 @@ const getMessage = (weatherDescription) => {
             "Дождь - это так романтично",
             "Прогулки под дождем, что может быть лучше",
             "Без зонтика лучше не выходить"
+        ]*/
+        Clear:[
+            'Its time to have a walk'
+        ],
+        Clouds:[
+            'Look at the clouds! They are gorgeous'
+        ],
+        Rain:[
+            'Lets drink some hot tea :)'
         ]
     }
     const index = getRandIndex(tips[weatherDescription])
